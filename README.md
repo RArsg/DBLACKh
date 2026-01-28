@@ -1,26 +1,3 @@
-local success, config = pcall(function() 
-    return loadstring(game:HttpGet("https://pastebin.com/raw/4tLkL6KP"))() 
-end)
-
-if not success or (config and config.Status == "False") then 
-    return 
-end
-
-local MarketplaceService = game:GetService("MarketplaceService")
-local UserInputService = game:GetService("UserInputService")
-local TweenService = game:GetService("TweenService")
-local HttpService = game:GetService("HttpService")
-local RunService = game:GetService("RunService")
-local CoreGui = game:GetService("CoreGui")
-local Players = game:GetService("Players")
-local Player = Players.LocalPlayer
-local PlayerMouse = Player:GetMouse()
-
-local redzlib = {
-Themes = {
-    Darker = {
-        ["Color Hub 1"] = ColorSequence.new({
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(120, 0, 255)),
             ColorSequenceKeypoint.new(0.50, Color3.fromRGB(90, 0, 200)),
             ColorSequenceKeypoint.new(1.00, Color3.fromRGB(60, 0, 150))
         }),
